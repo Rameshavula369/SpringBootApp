@@ -1,0 +1,1891 @@
+package com.effort.settings;
+
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class ServiceCallConstants implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7319348626792008476L;
+	private Long service_call_service_rendered_form_spec_id;//invoice
+	private Long service_call_payment_collection_and_feedback_form_spec_id;//payment
+	private Long service_call_service_rendered_serviced_product_details_form_section_spec_id;
+	
+	private Long service_call_service_rendered_product_form_section_field_spec_id;
+	private Long service_call_service_rendered_part_form_section_field_spec_id;
+	private Long service_call_service_rendered_in_warranty_form_section_field_spec_id;
+	private Long service_call_service_rendered_in_warranty_amount_form_section_field_spec_id;
+	private Long service_call_service_rendered_out_warranty_form_section_field_spec_id;
+	private Long service_call_service_rendered_tax_amount_form_section_field_spec_id;
+	private Long service_call_service_rendered_quantity_form_section_field_spec_id;
+	private Long service_call_service_rendered_amount_form_section_field_spec_id;
+	private Long service_call_service_rendered_amount_tax_form_section_field_spec_id;
+	
+	private Long service_call_service_rendered_customer_form_field_spec_id;
+	private Long service_call_service_rendered_total_amount_form_field_spec_id;
+	private Long service_call_service_rendered_total_tax_form_field_spec_id;
+	private Long service_call_service_rendered_grand_total_form_field_spec_id;
+	private Long service_call_service_rendered_remarks_form_field_spec_id;
+	
+	private Long service_call_payment_collection_and_feedback_customer_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_payment_amount_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_payment_mode_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_payment_particulars_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_remarks_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_responsiveness_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_competence_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_quality_of_work_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_your_satisfaction_level_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_suggestions_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_area_of_improvement_form_field_spec_id;
+	private Long service_call_payment_collection_and_feedback_signature_form_field_spec_id;
+	
+	
+	private Long service_call_service_rendered_product_entity_spec_id;
+	private Long service_call_service_rendered_part_entity_spec_id;
+	//private Long service_call_employee_skill_sets_entity_spec_id;
+	private Long service_call_employee_payment_options_entity_spec_id;
+	
+	private Long service_call_product_product_entity_field_spec_id;
+	private Long service_call_product_product_code_entity_field_spec_id;
+	private Long service_call_product_description_entity_field_spec_id;
+	
+	private Long service_call_part_part_entity_field_spec_id;
+	private Long service_call_part_product_entity_field_spec_id;
+	private Long service_call_part_in_warranty_cost_entity_field_spec_id;
+	private Long service_call_part_out_warranty_cost_entity_field_spec_id;
+	private Long service_call_part_tax_rate_entity_field_spec_id;
+	
+	/*private Long service_call_employee_skill_sets_skill_entity_field_spec_id;
+	private Long service_call_employee_skill_sets_description_entity_field_spec_id;*/
+	
+	private Long service_call_employee_payment_options_payment_option_entity_field_spec_id;
+	private Long serivce_call_Job_form_specId;
+	/*private Long serivce_call_customer_form_specId;
+	
+	private Long service_call_customer_form_outstanding_amount_form_field_spec_id;
+	private Long service_call_customer_form_total_calls_form_field_spec_id;
+	private Long service_call_customer_form_last_service_date_form_field_spec_id;*/
+	
+	private Long service_call_visit_type;
+	
+	// New Product Line Specs......
+	
+	//private Long sales_outStanding_amount_form_spec_id;
+	private Long global_company_customer_form_spec_id;
+	
+	
+	private Long sales_new_leads_name_form_field_spec_id;
+	private Long sales_new_leads_primary_contact_first_name_form_field_spec_id;
+	private Long sales_new_leads_primary_contact_last_name_form_field_spec_id;
+	private Long sales_new_leads_primary_contact_phone_form_field_spec_id;
+	private Long sales_new_leads_primary_contact_email_form_field_spec_id;
+	private Long sales_new_leads_primary_contact_interested_products_form_field_spec_id;
+	private Long sales_new_leads_primary_contact_estimated_value_form_field_spec_id;
+	
+	private Long sales_payment_collection_customer_form_field_spec_id;
+	private Long sales_payment_collection_payment_amount_form_field_spec_id;
+	private Long sales_payment_collection_payment_mode_form_field_spec_id;
+	private Long sales_payment_collection_payment_particulars_form_field_spec_id;
+	private Long sales_payment_collection_remarks_form_field_spec_id;
+	private Long sales_payment_collection_customer_signature_form_field_spec_id;
+	
+	private Long sales_orderform_orderitems_form_section_spec_id;
+	private Long sales_orderform_item_form_section_field_spec_id;
+	private Long sales_orderform_price_unit_form_section_field_spec_id;
+	private Long sales_orderform_quantity_form_section_field_spec_id;
+	private Long sales_orderform_amount_form_section_field_spec_id;
+	
+	private Long sales_orderform_customer_form_field_spec_id;
+	private Long sales_orderform_discount_form_field_spec_id;
+	private Long sales_orderform_tax_percentage_form_field_spec_id;
+	private Long sales_orderform_total_amount_form_field_spec_id;
+	private Long sales_orderform_delivery_date_form_field_spec_id;
+	private Long sales_orderform_signature_form_field_spec_id;
+	
+	private Long delivery_delivery_items_form_section_spec_id;
+	private Long delivery_item_form_section_field_spec_id;
+	private Long delivery_quantity_form_section_field_spec_id;
+	private Long delivery_price_form_section_field_spec_id;
+	private Long delivery_amount_form_section_field_spec_id;
+	
+	private Long delivery_customer_form_field_spec_id;
+	private Long delivery_delivery_charges_form_field_spec_id;
+	private Long delivery_total_form_field_spec_id;
+	private Long delivery_amount_form_field_spec_id;
+	private Long delivery_payment_mode_form_field_spec_id;
+	private Long delivery_payment_particulars_form_field_spec_id;
+	private Long delivery_remarks_form_field_spec_id;
+	private Long delivery_customer_signature_form_field_spec_id;
+	
+	private Long collection_payment_collection_customer_form_field_spec_id;
+	private Long collection_payment_collection_amount_payed_form_field_spec_id;
+	private Long collection_payment_collection_payment_mode_form_field_spec_id;
+	private Long collection_payment_collection_payment_particulars_form_field_spec_id;
+	private Long collection_payment_collection_remarks_form_field_spec_id;
+	private Long collection_payment_collection_customer_signature_form_field_spec_id;
+	
+	private Long document_verification_sim_card_name_form_field_spec_id;
+	private Long document_verification_sim_card_phone_number_form_field_spec_id;
+	private Long document_verification_sim_card_address_form_field_spec_id;
+	private Long document_verification_sim_card_signature_form_field_spec_id;
+	private Long document_verification_sim_card_identity_proof_type_form_field_spec_id;
+	private Long document_verification_sim_card_identity_proof_form_field_spec_id;
+	private Long document_verification_sim_card_age_proof_type_form_field_spec_id;
+	private Long document_verification_sim_card_age_proof_form_field_spec_id;
+	private Long document_verification_sim_card_residence_proof_type_form_field_spec_id;
+	private Long document_verification_sim_card_residence_proof_form_field_spec_id;
+	private Long document_verification_sim_card_last_three_months_salary_available_form_field_spec_id;
+	private Long document_verification_sim_card_pan_card_photo_form_field_spec_id;
+	private Long document_verification_sim_card_one_cancelled_cheque_leaf_form_field_spec_id;
+	private Long document_verification_sim_card_personal_observation_form_field_spec_id;
+	
+	private Long document_verification_credit_card_name_form_field_spec_id;
+	private Long document_verification_credit_card_phone_number_form_field_spec_id;
+	private Long document_verification_credit_card_address_form_field_spec_id;
+	private Long document_verification_credit_card_signature_form_field_spec_id;
+	private Long document_verification_credit_card_identity_proof_type_form_field_spec_id;
+	private Long document_verification_credit_card_identity_proof_form_field_spec_id;
+	private Long document_verification_credit_card_age_proof_type_form_field_spec_id;
+	private Long document_verification_credit_card_age_proof_form_field_spec_id;
+	private Long document_verification_credit_card_residence_proof_type_form_field_spec_id;
+	private Long document_verification_credit_card_residence_proof_form_field_spec_id;
+	private Long document_verification_credit_card_last_three_months_salary_available_form_field_spec_id;
+	private Long document_verification_credit_card_income_tax_statement_available_form_field_spec_id;
+	private Long document_verification_credit_card_pan_card_photo_copy_form_field_spec_id;
+	private Long document_verification_credit_card_six_months_bank_statement_form_field_spec_id;
+	private Long document_verification_credit_card_one_cancelled_cheque_leaf_form_field_spec_id;
+	private Long document_verification_credit_card_personal_observation_form_field_spec_id;
+	
+	private Long document_verification_personal_loan_name_form_field_spec_id;
+	private Long document_verification_personal_loan_phone_number_form_field_spec_id;
+	private Long document_verification_personal_loan_address_form_field_spec_id;
+	private Long document_verification_personal_loan_signature_form_field_spec_id;
+	private Long document_verification_personal_loan_identity_proof_type_form_field_spec_id;
+	private Long document_verification_personal_loan_identity_proof_form_field_spec_id;
+	private Long document_verification_personal_loan_age_proof_type_form_field_spec_id;
+	private Long document_verification_personal_loan_age_proof_form_field_spec_id;
+	private Long document_verification_personal_loan_residence_proof_type_form_field_spec_id;
+	private Long document_verification_personal_loan_residence_proof_form_field_spec_id;
+	private Long document_verification_personal_loan_last_six_months_salary_available_form_field_spec_id;
+	private Long document_verification_personal_loan_income_tax_statement_available_form_field_spec_id;
+	private Long document_verification_personal_loan_pan_card_photo_copy_form_field_spec_id;
+	private Long document_verification_personal_loan_six_months_bank_statement_form_field_spec_id;
+	private Long document_verification_personal_loan_one_cancelled_cheque_leaf_form_field_spec_id;
+	private Long document_verification_personal_loan_letter_of_employment_form_field_spec_id;
+	private Long document_verification_personal_loan_guarantor_one_name_form_field_spec_id;
+	private Long document_verification_personal_loan_guarantor_one_phone_form_field_spec_id;
+	private Long document_verification_personal_loan_guarantor_one_address_form_field_spec_id;
+	private Long document_verification_personal_loan_guarantor_two_name_form_field_spec_id;
+	private Long document_verification_personal_loan_guarantor_two_phone_form_field_spec_id;
+	private Long document_verification_personal_loan_guarantor_two_address_form_field_spec_id;
+	private Long document_verification_personal_loan_personal_observation_form_field_spec_id;
+	
+	
+	
+	private Long sales_new_leads_form_spec_id;
+	private Long sales_orderform_form_spec_id;
+	private Long sales_payment_collection_form_spec_id;
+	//private Long sales_system_defined_fields_in_work_template_form_spec_id;
+	private Long collection_payment_collection_form_spec_id;
+	private Long delivery_delivery_form_spec_id;
+	private Long document_verification_credit_card_form_spec_id;
+	private Long document_verification_sim_card_form_spec_id;
+	private Long document_verification_personal_loan_form_spec_id;
+	
+	
+	
+	private Long sales_product_entity_spec_id;
+	private Long sales_product_name_entity_field_spec_id;
+	private Long sales_product_description_entity_field_spec_id;
+	private Long sales_product_price_entity_field_spec_id;
+	
+	private Long sales_payment_options_entity_spec_id;
+	private Long sales_payment_options_entity_field_spec_id;
+	
+	private Long collections_collection_payment_options_entity_spec_id;
+	private Long collections_payment_option_entity_field_spec_id;
+	
+	private Long delivery_items_entity_spec_id;
+	private Long delivery_items_item_entity_field_spec_id;
+	private Long delivery_items_description_entity_field_spec_id;
+	private Long delivery_items_price_entity_field_spec_id;
+	
+	private Long delivery_payment_options_entity_spec_id;
+	private Long delivery_payment_options_payment_option_entity_field_spec_id;
+	private Long document_verification_identity_proofs_entity_spec_id;
+	private Long document_verification_identity_proofs_entity_field_spec_id;
+	
+	private Long document_verification_age_proofs_entity_spec_id;
+	private Long document_verification_age_proofs_entity_field_spec_id;
+	private Long document_verification_residence_proofs_entity_spec_id;
+	private Long document_verification_residence_proofs_entity_field_spec_id;
+	
+	private Long global_company_customer_outstanding_amount_form_field_spec_id;
+	private Long global_company_customer_total_calls_form_field_spec_id;
+	private Long global_company_customer_last_service_date_form_field_spec_id;
+	
+	private Long service_call_system_defined_fields_in_work_template_form_spec_id;
+	private Long service_call_work_template_customer_form_field_spec_id;
+	
+	//end of New Product Lines 
+
+	public Long getService_call_service_rendered_form_spec_id() {
+		return service_call_service_rendered_form_spec_id;
+	}
+
+	public void setService_call_service_rendered_form_spec_id(
+			Long service_call_service_rendered_form_spec_id) {
+		this.service_call_service_rendered_form_spec_id = service_call_service_rendered_form_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_form_spec_id() {
+		return service_call_payment_collection_and_feedback_form_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_form_spec_id(
+			Long service_call_payment_collection_and_feedback_form_spec_id) {
+		this.service_call_payment_collection_and_feedback_form_spec_id = service_call_payment_collection_and_feedback_form_spec_id;
+	}
+
+	public Long getService_call_service_rendered_serviced_product_details_form_section_spec_id() {
+		return service_call_service_rendered_serviced_product_details_form_section_spec_id;
+	}
+
+	public void setService_call_service_rendered_serviced_product_details_form_section_spec_id(
+			Long service_call_service_rendered_serviced_product_details_form_section_spec_id) {
+		this.service_call_service_rendered_serviced_product_details_form_section_spec_id = service_call_service_rendered_serviced_product_details_form_section_spec_id;
+	}
+
+	public Long getService_call_service_rendered_product_form_section_field_spec_id() {
+		return service_call_service_rendered_product_form_section_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_product_form_section_field_spec_id(
+			Long service_call_service_rendered_product_form_section_field_spec_id) {
+		this.service_call_service_rendered_product_form_section_field_spec_id = service_call_service_rendered_product_form_section_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_part_form_section_field_spec_id() {
+		return service_call_service_rendered_part_form_section_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_part_form_section_field_spec_id(
+			Long service_call_service_rendered_part_form_section_field_spec_id) {
+		this.service_call_service_rendered_part_form_section_field_spec_id = service_call_service_rendered_part_form_section_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_in_warranty_form_section_field_spec_id() {
+		return service_call_service_rendered_in_warranty_form_section_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_in_warranty_form_section_field_spec_id(
+			Long service_call_service_rendered_in_warranty_form_section_field_spec_id) {
+		this.service_call_service_rendered_in_warranty_form_section_field_spec_id = service_call_service_rendered_in_warranty_form_section_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_in_warranty_amount_form_section_field_spec_id() {
+		return service_call_service_rendered_in_warranty_amount_form_section_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_in_warranty_amount_form_section_field_spec_id(
+			Long service_call_service_rendered_in_warranty_amount_form_section_field_spec_id) {
+		this.service_call_service_rendered_in_warranty_amount_form_section_field_spec_id = service_call_service_rendered_in_warranty_amount_form_section_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_out_warranty_form_section_field_spec_id() {
+		return service_call_service_rendered_out_warranty_form_section_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_out_warranty_form_section_field_spec_id(
+			Long service_call_service_rendered_out_warranty_form_section_field_spec_id) {
+		this.service_call_service_rendered_out_warranty_form_section_field_spec_id = service_call_service_rendered_out_warranty_form_section_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_tax_amount_form_section_field_spec_id() {
+		return service_call_service_rendered_tax_amount_form_section_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_tax_amount_form_section_field_spec_id(
+			Long service_call_service_rendered_tax_amount_form_section_field_spec_id) {
+		this.service_call_service_rendered_tax_amount_form_section_field_spec_id = service_call_service_rendered_tax_amount_form_section_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_quantity_form_section_field_spec_id() {
+		return service_call_service_rendered_quantity_form_section_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_quantity_form_section_field_spec_id(
+			Long service_call_service_rendered_quantity_form_section_field_spec_id) {
+		this.service_call_service_rendered_quantity_form_section_field_spec_id = service_call_service_rendered_quantity_form_section_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_amount_form_section_field_spec_id() {
+		return service_call_service_rendered_amount_form_section_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_amount_form_section_field_spec_id(
+			Long service_call_service_rendered_amount_form_section_field_spec_id) {
+		this.service_call_service_rendered_amount_form_section_field_spec_id = service_call_service_rendered_amount_form_section_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_amount_tax_form_section_field_spec_id() {
+		return service_call_service_rendered_amount_tax_form_section_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_amount_tax_form_section_field_spec_id(
+			Long service_call_service_rendered_amount_tax_form_section_field_spec_id) {
+		this.service_call_service_rendered_amount_tax_form_section_field_spec_id = service_call_service_rendered_amount_tax_form_section_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_customer_form_field_spec_id() {
+		return service_call_service_rendered_customer_form_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_customer_form_field_spec_id(
+			Long service_call_service_rendered_customer_form_field_spec_id) {
+		this.service_call_service_rendered_customer_form_field_spec_id = service_call_service_rendered_customer_form_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_total_amount_form_field_spec_id() {
+		return service_call_service_rendered_total_amount_form_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_total_amount_form_field_spec_id(
+			Long service_call_service_rendered_total_amount_form_field_spec_id) {
+		this.service_call_service_rendered_total_amount_form_field_spec_id = service_call_service_rendered_total_amount_form_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_total_tax_form_field_spec_id() {
+		return service_call_service_rendered_total_tax_form_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_total_tax_form_field_spec_id(
+			Long service_call_service_rendered_total_tax_form_field_spec_id) {
+		this.service_call_service_rendered_total_tax_form_field_spec_id = service_call_service_rendered_total_tax_form_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_grand_total_form_field_spec_id() {
+		return service_call_service_rendered_grand_total_form_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_grand_total_form_field_spec_id(
+			Long service_call_service_rendered_grand_total_form_field_spec_id) {
+		this.service_call_service_rendered_grand_total_form_field_spec_id = service_call_service_rendered_grand_total_form_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_remarks_form_field_spec_id() {
+		return service_call_service_rendered_remarks_form_field_spec_id;
+	}
+
+	public void setService_call_service_rendered_remarks_form_field_spec_id(
+			Long service_call_service_rendered_remarks_form_field_spec_id) {
+		this.service_call_service_rendered_remarks_form_field_spec_id = service_call_service_rendered_remarks_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_customer_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_customer_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_customer_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_customer_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_customer_form_field_spec_id = service_call_payment_collection_and_feedback_customer_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_payment_amount_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_payment_amount_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_payment_amount_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_payment_amount_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_payment_amount_form_field_spec_id = service_call_payment_collection_and_feedback_payment_amount_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_payment_mode_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_payment_mode_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_payment_mode_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_payment_mode_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_payment_mode_form_field_spec_id = service_call_payment_collection_and_feedback_payment_mode_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_payment_particulars_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_payment_particulars_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_payment_particulars_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_payment_particulars_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_payment_particulars_form_field_spec_id = service_call_payment_collection_and_feedback_payment_particulars_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_remarks_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_remarks_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_remarks_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_remarks_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_remarks_form_field_spec_id = service_call_payment_collection_and_feedback_remarks_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_responsiveness_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_responsiveness_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_responsiveness_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_responsiveness_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_responsiveness_form_field_spec_id = service_call_payment_collection_and_feedback_responsiveness_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_competence_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_competence_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_competence_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_competence_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_competence_form_field_spec_id = service_call_payment_collection_and_feedback_competence_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_quality_of_work_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_quality_of_work_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_quality_of_work_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_quality_of_work_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_quality_of_work_form_field_spec_id = service_call_payment_collection_and_feedback_quality_of_work_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_your_satisfaction_level_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_your_satisfaction_level_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_your_satisfaction_level_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_your_satisfaction_level_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_your_satisfaction_level_form_field_spec_id = service_call_payment_collection_and_feedback_your_satisfaction_level_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_suggestions_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_suggestions_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_suggestions_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_suggestions_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_suggestions_form_field_spec_id = service_call_payment_collection_and_feedback_suggestions_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_area_of_improvement_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_area_of_improvement_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_area_of_improvement_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_area_of_improvement_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_area_of_improvement_form_field_spec_id = service_call_payment_collection_and_feedback_area_of_improvement_form_field_spec_id;
+	}
+
+	public Long getService_call_payment_collection_and_feedback_signature_form_field_spec_id() {
+		return service_call_payment_collection_and_feedback_signature_form_field_spec_id;
+	}
+
+	public void setService_call_payment_collection_and_feedback_signature_form_field_spec_id(
+			Long service_call_payment_collection_and_feedback_signature_form_field_spec_id) {
+		this.service_call_payment_collection_and_feedback_signature_form_field_spec_id = service_call_payment_collection_and_feedback_signature_form_field_spec_id;
+	}
+
+	public Long getService_call_service_rendered_product_entity_spec_id() {
+		return service_call_service_rendered_product_entity_spec_id;
+	}
+
+	public void setService_call_service_rendered_product_entity_spec_id(
+			Long service_call_service_rendered_product_entity_spec_id) {
+		this.service_call_service_rendered_product_entity_spec_id = service_call_service_rendered_product_entity_spec_id;
+	}
+
+	public Long getService_call_service_rendered_part_entity_spec_id() {
+		return service_call_service_rendered_part_entity_spec_id;
+	}
+
+	public void setService_call_service_rendered_part_entity_spec_id(
+			Long service_call_service_rendered_part_entity_spec_id) {
+		this.service_call_service_rendered_part_entity_spec_id = service_call_service_rendered_part_entity_spec_id;
+	}
+
+	/*public Long getService_call_employee_skill_sets_entity_spec_id() {
+		return service_call_employee_skill_sets_entity_spec_id;
+	}
+
+	public void setService_call_employee_skill_sets_entity_spec_id(
+			Long service_call_employee_skill_sets_entity_spec_id) {
+		this.service_call_employee_skill_sets_entity_spec_id = service_call_employee_skill_sets_entity_spec_id;
+	}*/
+
+	public Long getService_call_employee_payment_options_entity_spec_id() {
+		return service_call_employee_payment_options_entity_spec_id;
+	}
+
+	public void setService_call_employee_payment_options_entity_spec_id(
+			Long service_call_employee_payment_options_entity_spec_id) {
+		this.service_call_employee_payment_options_entity_spec_id = service_call_employee_payment_options_entity_spec_id;
+	}
+
+	public Long getService_call_product_product_entity_field_spec_id() {
+		return service_call_product_product_entity_field_spec_id;
+	}
+
+	public void setService_call_product_product_entity_field_spec_id(
+			Long service_call_product_product_entity_field_spec_id) {
+		this.service_call_product_product_entity_field_spec_id = service_call_product_product_entity_field_spec_id;
+	}
+
+	public Long getService_call_product_product_code_entity_field_spec_id() {
+		return service_call_product_product_code_entity_field_spec_id;
+	}
+
+	public void setService_call_product_product_code_entity_field_spec_id(
+			Long service_call_product_product_code_entity_field_spec_id) {
+		this.service_call_product_product_code_entity_field_spec_id = service_call_product_product_code_entity_field_spec_id;
+	}
+
+	public Long getService_call_product_description_entity_field_spec_id() {
+		return service_call_product_description_entity_field_spec_id;
+	}
+
+	public void setService_call_product_description_entity_field_spec_id(
+			Long service_call_product_description_entity_field_spec_id) {
+		this.service_call_product_description_entity_field_spec_id = service_call_product_description_entity_field_spec_id;
+	}
+
+	public Long getService_call_part_part_entity_field_spec_id() {
+		return service_call_part_part_entity_field_spec_id;
+	}
+
+	public void setService_call_part_part_entity_field_spec_id(
+			Long service_call_part_part_entity_field_spec_id) {
+		this.service_call_part_part_entity_field_spec_id = service_call_part_part_entity_field_spec_id;
+	}
+
+	public Long getService_call_part_product_entity_field_spec_id() {
+		return service_call_part_product_entity_field_spec_id;
+	}
+
+	public void setService_call_part_product_entity_field_spec_id(
+			Long service_call_part_product_entity_field_spec_id) {
+		this.service_call_part_product_entity_field_spec_id = service_call_part_product_entity_field_spec_id;
+	}
+
+	public Long getService_call_part_in_warranty_cost_entity_field_spec_id() {
+		return service_call_part_in_warranty_cost_entity_field_spec_id;
+	}
+
+	public void setService_call_part_in_warranty_cost_entity_field_spec_id(
+			Long service_call_part_in_warranty_cost_entity_field_spec_id) {
+		this.service_call_part_in_warranty_cost_entity_field_spec_id = service_call_part_in_warranty_cost_entity_field_spec_id;
+	}
+
+	public Long getService_call_part_out_warranty_cost_entity_field_spec_id() {
+		return service_call_part_out_warranty_cost_entity_field_spec_id;
+	}
+
+	public void setService_call_part_out_warranty_cost_entity_field_spec_id(
+			Long service_call_part_out_warranty_cost_entity_field_spec_id) {
+		this.service_call_part_out_warranty_cost_entity_field_spec_id = service_call_part_out_warranty_cost_entity_field_spec_id;
+	}
+
+	public Long getService_call_part_tax_rate_entity_field_spec_id() {
+		return service_call_part_tax_rate_entity_field_spec_id;
+	}
+
+	public void setService_call_part_tax_rate_entity_field_spec_id(
+			Long service_call_part_tax_rate_entity_field_spec_id) {
+		this.service_call_part_tax_rate_entity_field_spec_id = service_call_part_tax_rate_entity_field_spec_id;
+	}
+
+	/*public Long getService_call_employee_skill_sets_skill_entity_field_spec_id() {
+		return service_call_employee_skill_sets_skill_entity_field_spec_id;
+	}
+
+	public void setService_call_employee_skill_sets_skill_entity_field_spec_id(
+			Long service_call_employee_skill_sets_skill_entity_field_spec_id) {
+		this.service_call_employee_skill_sets_skill_entity_field_spec_id = service_call_employee_skill_sets_skill_entity_field_spec_id;
+	}
+
+	public Long getService_call_employee_skill_sets_description_entity_field_spec_id() {
+		return service_call_employee_skill_sets_description_entity_field_spec_id;
+	}
+
+	public void setService_call_employee_skill_sets_description_entity_field_spec_id(
+			Long service_call_employee_skill_sets_description_entity_field_spec_id) {
+		this.service_call_employee_skill_sets_description_entity_field_spec_id = service_call_employee_skill_sets_description_entity_field_spec_id;
+	}*/
+
+	public Long getService_call_employee_payment_options_payment_option_entity_field_spec_id() {
+		return service_call_employee_payment_options_payment_option_entity_field_spec_id;
+	}
+
+	public void setService_call_employee_payment_options_payment_option_entity_field_spec_id(
+			Long service_call_employee_payment_options_payment_option_entity_field_spec_id) {
+		this.service_call_employee_payment_options_payment_option_entity_field_spec_id = service_call_employee_payment_options_payment_option_entity_field_spec_id;
+	}
+
+	public Long getSerivce_call_Job_form_specId() {
+		return serivce_call_Job_form_specId;
+	}
+
+	public void setSerivce_call_Job_form_specId(Long serivce_call_Job_form_specId) {
+		this.serivce_call_Job_form_specId = serivce_call_Job_form_specId;
+	}
+
+	/*public Long getSerivce_call_customer_form_specId() {
+		return serivce_call_customer_form_specId;
+	}
+
+	public void setSerivce_call_customer_form_specId(
+			Long serivce_call_customer_form_specId) {
+		this.serivce_call_customer_form_specId = serivce_call_customer_form_specId;
+	}
+
+	public Long getService_call_customer_form_outstanding_amount_form_field_spec_id() {
+		return service_call_customer_form_outstanding_amount_form_field_spec_id;
+	}
+
+	public void setService_call_customer_form_outstanding_amount_form_field_spec_id(
+			Long service_call_customer_form_outstanding_amount_form_field_spec_id) {
+		this.service_call_customer_form_outstanding_amount_form_field_spec_id = service_call_customer_form_outstanding_amount_form_field_spec_id;
+	}
+
+	public Long getService_call_customer_form_total_calls_form_field_spec_id() {
+		return service_call_customer_form_total_calls_form_field_spec_id;
+	}
+
+	public void setService_call_customer_form_total_calls_form_field_spec_id(
+			Long service_call_customer_form_total_calls_form_field_spec_id) {
+		this.service_call_customer_form_total_calls_form_field_spec_id = service_call_customer_form_total_calls_form_field_spec_id;
+	}
+
+	public Long getService_call_customer_form_last_service_date_form_field_spec_id() {
+		return service_call_customer_form_last_service_date_form_field_spec_id;
+	}
+
+	public void setService_call_customer_form_last_service_date_form_field_spec_id(
+			Long service_call_customer_form_last_service_date_form_field_spec_id) {
+		this.service_call_customer_form_last_service_date_form_field_spec_id = service_call_customer_form_last_service_date_form_field_spec_id;
+	}*/
+	
+	
+	public List<Long>  getRestrictedVisibilityFormSpecIds(){
+		List<Long> formSpecIds=new ArrayList<Long>();
+		/*if(serivce_call_Job_form_specId!=null){
+			formSpecIds.add(serivce_call_Job_form_specId);
+		}*/
+		
+		/*if(serivce_call_customer_form_specId!=null){
+			formSpecIds.add(serivce_call_customer_form_specId);
+		}*/
+		return formSpecIds;
+	}
+
+	public Long getService_call_visit_type() {
+		return service_call_visit_type;
+	}
+
+	public void setService_call_visit_type(Long service_call_visit_type) {
+		this.service_call_visit_type = service_call_visit_type;
+	}
+	
+	//New Product line Setter and Getter Methods Starts...............
+
+	/*public Long getSales_outStanding_amount_form_spec_id() {
+		return sales_outStanding_amount_form_spec_id;
+	}
+
+	public void setSales_outStanding_amount_form_spec_id(
+			Long sales_outStanding_amount_form_spec_id) {
+		this.sales_outStanding_amount_form_spec_id = sales_outStanding_amount_form_spec_id;
+	}*/
+
+	public Long getGlobal_company_customer_form_spec_id() {
+		return global_company_customer_form_spec_id;
+	}
+
+	public void setGlobal_company_customer_form_spec_id(
+			Long global_company_customer_form_spec_id) {
+		this.global_company_customer_form_spec_id = global_company_customer_form_spec_id;
+	}
+
+	public Long getSales_new_leads_name_form_field_spec_id() {
+		return sales_new_leads_name_form_field_spec_id;
+	}
+
+	public void setSales_new_leads_name_form_field_spec_id(
+			Long sales_new_leads_name_form_field_spec_id) {
+		this.sales_new_leads_name_form_field_spec_id = sales_new_leads_name_form_field_spec_id;
+	}
+
+	public Long getSales_new_leads_primary_contact_first_name_form_field_spec_id() {
+		return sales_new_leads_primary_contact_first_name_form_field_spec_id;
+	}
+
+	public void setSales_new_leads_primary_contact_first_name_form_field_spec_id(
+			Long sales_new_leads_primary_contact_first_name_form_field_spec_id) {
+		this.sales_new_leads_primary_contact_first_name_form_field_spec_id = sales_new_leads_primary_contact_first_name_form_field_spec_id;
+	}
+
+	public Long getSales_new_leads_primary_contact_last_name_form_field_spec_id() {
+		return sales_new_leads_primary_contact_last_name_form_field_spec_id;
+	}
+
+	public void setSales_new_leads_primary_contact_last_name_form_field_spec_id(
+			Long sales_new_leads_primary_contact_last_name_form_field_spec_id) {
+		this.sales_new_leads_primary_contact_last_name_form_field_spec_id = sales_new_leads_primary_contact_last_name_form_field_spec_id;
+	}
+
+	public Long getSales_new_leads_primary_contact_phone_form_field_spec_id() {
+		return sales_new_leads_primary_contact_phone_form_field_spec_id;
+	}
+
+	public void setSales_new_leads_primary_contact_phone_form_field_spec_id(
+			Long sales_new_leads_primary_contact_phone_form_field_spec_id) {
+		this.sales_new_leads_primary_contact_phone_form_field_spec_id = sales_new_leads_primary_contact_phone_form_field_spec_id;
+	}
+
+	public Long getSales_new_leads_primary_contact_email_form_field_spec_id() {
+		return sales_new_leads_primary_contact_email_form_field_spec_id;
+	}
+
+	public void setSales_new_leads_primary_contact_email_form_field_spec_id(
+			Long sales_new_leads_primary_contact_email_form_field_spec_id) {
+		this.sales_new_leads_primary_contact_email_form_field_spec_id = sales_new_leads_primary_contact_email_form_field_spec_id;
+	}
+
+	public Long getSales_new_leads_primary_contact_interested_products_form_field_spec_id() {
+		return sales_new_leads_primary_contact_interested_products_form_field_spec_id;
+	}
+
+	public void setSales_new_leads_primary_contact_interested_products_form_field_spec_id(
+			Long sales_new_leads_primary_contact_interested_products_form_field_spec_id) {
+		this.sales_new_leads_primary_contact_interested_products_form_field_spec_id = sales_new_leads_primary_contact_interested_products_form_field_spec_id;
+	}
+
+	public Long getSales_new_leads_primary_contact_estimated_value_form_field_spec_id() {
+		return sales_new_leads_primary_contact_estimated_value_form_field_spec_id;
+	}
+
+	public void setSales_new_leads_primary_contact_estimated_value_form_field_spec_id(
+			Long sales_new_leads_primary_contact_estimated_value_form_field_spec_id) {
+		this.sales_new_leads_primary_contact_estimated_value_form_field_spec_id = sales_new_leads_primary_contact_estimated_value_form_field_spec_id;
+	}
+
+	public Long getSales_payment_collection_customer_form_field_spec_id() {
+		return sales_payment_collection_customer_form_field_spec_id;
+	}
+
+	public void setSales_payment_collection_customer_form_field_spec_id(
+			Long sales_payment_collection_customer_form_field_spec_id) {
+		this.sales_payment_collection_customer_form_field_spec_id = sales_payment_collection_customer_form_field_spec_id;
+	}
+
+	public Long getSales_payment_collection_payment_amount_form_field_spec_id() {
+		return sales_payment_collection_payment_amount_form_field_spec_id;
+	}
+
+	public void setSales_payment_collection_payment_amount_form_field_spec_id(
+			Long sales_payment_collection_payment_amount_form_field_spec_id) {
+		this.sales_payment_collection_payment_amount_form_field_spec_id = sales_payment_collection_payment_amount_form_field_spec_id;
+	}
+
+	public Long getSales_payment_collection_payment_mode_form_field_spec_id() {
+		return sales_payment_collection_payment_mode_form_field_spec_id;
+	}
+
+	public void setSales_payment_collection_payment_mode_form_field_spec_id(
+			Long sales_payment_collection_payment_mode_form_field_spec_id) {
+		this.sales_payment_collection_payment_mode_form_field_spec_id = sales_payment_collection_payment_mode_form_field_spec_id;
+	}
+
+	public Long getSales_payment_collection_payment_particulars_form_field_spec_id() {
+		return sales_payment_collection_payment_particulars_form_field_spec_id;
+	}
+
+	public void setSales_payment_collection_payment_particulars_form_field_spec_id(
+			Long sales_payment_collection_payment_particulars_form_field_spec_id) {
+		this.sales_payment_collection_payment_particulars_form_field_spec_id = sales_payment_collection_payment_particulars_form_field_spec_id;
+	}
+
+	public Long getSales_payment_collection_remarks_form_field_spec_id() {
+		return sales_payment_collection_remarks_form_field_spec_id;
+	}
+
+	public void setSales_payment_collection_remarks_form_field_spec_id(
+			Long sales_payment_collection_remarks_form_field_spec_id) {
+		this.sales_payment_collection_remarks_form_field_spec_id = sales_payment_collection_remarks_form_field_spec_id;
+	}
+
+	public Long getSales_payment_collection_customer_signature_form_field_spec_id() {
+		return sales_payment_collection_customer_signature_form_field_spec_id;
+	}
+
+	public void setSales_payment_collection_customer_signature_form_field_spec_id(
+			Long sales_payment_collection_customer_signature_form_field_spec_id) {
+		this.sales_payment_collection_customer_signature_form_field_spec_id = sales_payment_collection_customer_signature_form_field_spec_id;
+	}
+
+	public Long getSales_orderform_orderitems_form_section_spec_id() {
+		return sales_orderform_orderitems_form_section_spec_id;
+	}
+
+	public void setSales_orderform_orderitems_form_section_spec_id(
+			Long sales_orderform_orderitems_form_section_spec_id) {
+		this.sales_orderform_orderitems_form_section_spec_id = sales_orderform_orderitems_form_section_spec_id;
+	}
+
+	public Long getSales_orderform_item_form_section_field_spec_id() {
+		return sales_orderform_item_form_section_field_spec_id;
+	}
+
+	public void setSales_orderform_item_form_section_field_spec_id(
+			Long sales_orderform_item_form_section_field_spec_id) {
+		this.sales_orderform_item_form_section_field_spec_id = sales_orderform_item_form_section_field_spec_id;
+	}
+
+	public Long getSales_orderform_price_unit_form_section_field_spec_id() {
+		return sales_orderform_price_unit_form_section_field_spec_id;
+	}
+
+	public void setSales_orderform_price_unit_form_section_field_spec_id(
+			Long sales_orderform_price_unit_form_section_field_spec_id) {
+		this.sales_orderform_price_unit_form_section_field_spec_id = sales_orderform_price_unit_form_section_field_spec_id;
+	}
+
+	public Long getSales_orderform_quantity_form_section_field_spec_id() {
+		return sales_orderform_quantity_form_section_field_spec_id;
+	}
+
+	public void setSales_orderform_quantity_form_section_field_spec_id(
+			Long sales_orderform_quantity_form_section_field_spec_id) {
+		this.sales_orderform_quantity_form_section_field_spec_id = sales_orderform_quantity_form_section_field_spec_id;
+	}
+
+	public Long getSales_orderform_amount_form_section_field_spec_id() {
+		return sales_orderform_amount_form_section_field_spec_id;
+	}
+
+	public void setSales_orderform_amount_form_section_field_spec_id(
+			Long sales_orderform_amount_form_section_field_spec_id) {
+		this.sales_orderform_amount_form_section_field_spec_id = sales_orderform_amount_form_section_field_spec_id;
+	}
+
+	public Long getSales_orderform_customer_form_field_spec_id() {
+		return sales_orderform_customer_form_field_spec_id;
+	}
+
+	public void setSales_orderform_customer_form_field_spec_id(
+			Long sales_orderform_customer_form_field_spec_id) {
+		this.sales_orderform_customer_form_field_spec_id = sales_orderform_customer_form_field_spec_id;
+	}
+
+	public Long getSales_orderform_discount_form_field_spec_id() {
+		return sales_orderform_discount_form_field_spec_id;
+	}
+
+	public void setSales_orderform_discount_form_field_spec_id(
+			Long sales_orderform_discount_form_field_spec_id) {
+		this.sales_orderform_discount_form_field_spec_id = sales_orderform_discount_form_field_spec_id;
+	}
+
+	public Long getSales_orderform_tax_percentage_form_field_spec_id() {
+		return sales_orderform_tax_percentage_form_field_spec_id;
+	}
+
+	public void setSales_orderform_tax_percentage_form_field_spec_id(
+			Long sales_orderform_tax_percentage_form_field_spec_id) {
+		this.sales_orderform_tax_percentage_form_field_spec_id = sales_orderform_tax_percentage_form_field_spec_id;
+	}
+
+	public Long getSales_orderform_total_amount_form_field_spec_id() {
+		return sales_orderform_total_amount_form_field_spec_id;
+	}
+
+	public void setSales_orderform_total_amount_form_field_spec_id(
+			Long sales_orderform_total_amount_form_field_spec_id) {
+		this.sales_orderform_total_amount_form_field_spec_id = sales_orderform_total_amount_form_field_spec_id;
+	}
+
+	public Long getSales_orderform_delivery_date_form_field_spec_id() {
+		return sales_orderform_delivery_date_form_field_spec_id;
+	}
+
+	public void setSales_orderform_delivery_date_form_field_spec_id(
+			Long sales_orderform_delivery_date_form_field_spec_id) {
+		this.sales_orderform_delivery_date_form_field_spec_id = sales_orderform_delivery_date_form_field_spec_id;
+	}
+
+	public Long getSales_orderform_signature_form_field_spec_id() {
+		return sales_orderform_signature_form_field_spec_id;
+	}
+
+	public void setSales_orderform_signature_form_field_spec_id(
+			Long sales_orderform_signature_form_field_spec_id) {
+		this.sales_orderform_signature_form_field_spec_id = sales_orderform_signature_form_field_spec_id;
+	}
+
+	public Long getDelivery_delivery_items_form_section_spec_id() {
+		return delivery_delivery_items_form_section_spec_id;
+	}
+
+	public void setDelivery_delivery_items_form_section_spec_id(
+			Long delivery_delivery_items_form_section_spec_id) {
+		this.delivery_delivery_items_form_section_spec_id = delivery_delivery_items_form_section_spec_id;
+	}
+
+	public Long getDelivery_item_form_section_field_spec_id() {
+		return delivery_item_form_section_field_spec_id;
+	}
+
+	public void setDelivery_item_form_section_field_spec_id(
+			Long delivery_item_form_section_field_spec_id) {
+		this.delivery_item_form_section_field_spec_id = delivery_item_form_section_field_spec_id;
+	}
+
+	public Long getDelivery_quantity_form_section_field_spec_id() {
+		return delivery_quantity_form_section_field_spec_id;
+	}
+
+	public void setDelivery_quantity_form_section_field_spec_id(
+			Long delivery_quantity_form_section_field_spec_id) {
+		this.delivery_quantity_form_section_field_spec_id = delivery_quantity_form_section_field_spec_id;
+	}
+
+	public Long getDelivery_price_form_section_field_spec_id() {
+		return delivery_price_form_section_field_spec_id;
+	}
+
+	public void setDelivery_price_form_section_field_spec_id(
+			Long delivery_price_form_section_field_spec_id) {
+		this.delivery_price_form_section_field_spec_id = delivery_price_form_section_field_spec_id;
+	}
+
+	public Long getDelivery_amount_form_section_field_spec_id() {
+		return delivery_amount_form_section_field_spec_id;
+	}
+
+	public void setDelivery_amount_form_section_field_spec_id(
+			Long delivery_amount_form_section_field_spec_id) {
+		this.delivery_amount_form_section_field_spec_id = delivery_amount_form_section_field_spec_id;
+	}
+
+	public Long getDelivery_customer_form_field_spec_id() {
+		return delivery_customer_form_field_spec_id;
+	}
+
+	public void setDelivery_customer_form_field_spec_id(
+			Long delivery_customer_form_field_spec_id) {
+		this.delivery_customer_form_field_spec_id = delivery_customer_form_field_spec_id;
+	}
+
+	public Long getDelivery_delivery_charges_form_field_spec_id() {
+		return delivery_delivery_charges_form_field_spec_id;
+	}
+
+	public void setDelivery_delivery_charges_form_field_spec_id(
+			Long delivery_delivery_charges_form_field_spec_id) {
+		this.delivery_delivery_charges_form_field_spec_id = delivery_delivery_charges_form_field_spec_id;
+	}
+
+	public Long getDelivery_total_form_field_spec_id() {
+		return delivery_total_form_field_spec_id;
+	}
+
+	public void setDelivery_total_form_field_spec_id(
+			Long delivery_total_form_field_spec_id) {
+		this.delivery_total_form_field_spec_id = delivery_total_form_field_spec_id;
+	}
+
+	public Long getDelivery_amount_form_field_spec_id() {
+		return delivery_amount_form_field_spec_id;
+	}
+
+	public void setDelivery_amount_form_field_spec_id(
+			Long delivery_amount_form_field_spec_id) {
+		this.delivery_amount_form_field_spec_id = delivery_amount_form_field_spec_id;
+	}
+
+	public Long getDelivery_payment_mode_form_field_spec_id() {
+		return delivery_payment_mode_form_field_spec_id;
+	}
+
+	public void setDelivery_payment_mode_form_field_spec_id(
+			Long delivery_payment_mode_form_field_spec_id) {
+		this.delivery_payment_mode_form_field_spec_id = delivery_payment_mode_form_field_spec_id;
+	}
+
+	public Long getDelivery_payment_particulars_form_field_spec_id() {
+		return delivery_payment_particulars_form_field_spec_id;
+	}
+
+	public void setDelivery_payment_particulars_form_field_spec_id(
+			Long delivery_payment_particulars_form_field_spec_id) {
+		this.delivery_payment_particulars_form_field_spec_id = delivery_payment_particulars_form_field_spec_id;
+	}
+
+	public Long getDelivery_remarks_form_field_spec_id() {
+		return delivery_remarks_form_field_spec_id;
+	}
+
+	public void setDelivery_remarks_form_field_spec_id(
+			Long delivery_remarks_form_field_spec_id) {
+		this.delivery_remarks_form_field_spec_id = delivery_remarks_form_field_spec_id;
+	}
+
+	public Long getDelivery_customer_signature_form_field_spec_id() {
+		return delivery_customer_signature_form_field_spec_id;
+	}
+
+	public void setDelivery_customer_signature_form_field_spec_id(
+			Long delivery_customer_signature_form_field_spec_id) {
+		this.delivery_customer_signature_form_field_spec_id = delivery_customer_signature_form_field_spec_id;
+	}
+
+	public Long getCollection_payment_collection_customer_form_field_spec_id() {
+		return collection_payment_collection_customer_form_field_spec_id;
+	}
+
+	public void setCollection_payment_collection_customer_form_field_spec_id(
+			Long collection_payment_collection_customer_form_field_spec_id) {
+		this.collection_payment_collection_customer_form_field_spec_id = collection_payment_collection_customer_form_field_spec_id;
+	}
+
+	public Long getCollection_payment_collection_amount_payed_form_field_spec_id() {
+		return collection_payment_collection_amount_payed_form_field_spec_id;
+	}
+
+	public void setCollection_payment_collection_amount_payed_form_field_spec_id(
+			Long collection_payment_collection_amount_payed_form_field_spec_id) {
+		this.collection_payment_collection_amount_payed_form_field_spec_id = collection_payment_collection_amount_payed_form_field_spec_id;
+	}
+
+	public Long getCollection_payment_collection_payment_mode_form_field_spec_id() {
+		return collection_payment_collection_payment_mode_form_field_spec_id;
+	}
+
+	public void setCollection_payment_collection_payment_mode_form_field_spec_id(
+			Long collection_payment_collection_payment_mode_form_field_spec_id) {
+		this.collection_payment_collection_payment_mode_form_field_spec_id = collection_payment_collection_payment_mode_form_field_spec_id;
+	}
+
+	public Long getCollection_payment_collection_payment_particulars_form_field_spec_id() {
+		return collection_payment_collection_payment_particulars_form_field_spec_id;
+	}
+
+	public void setCollection_payment_collection_payment_particulars_form_field_spec_id(
+			Long collection_payment_collection_payment_particulars_form_field_spec_id) {
+		this.collection_payment_collection_payment_particulars_form_field_spec_id = collection_payment_collection_payment_particulars_form_field_spec_id;
+	}
+
+	public Long getCollection_payment_collection_remarks_form_field_spec_id() {
+		return collection_payment_collection_remarks_form_field_spec_id;
+	}
+
+	public void setCollection_payment_collection_remarks_form_field_spec_id(
+			Long collection_payment_collection_remarks_form_field_spec_id) {
+		this.collection_payment_collection_remarks_form_field_spec_id = collection_payment_collection_remarks_form_field_spec_id;
+	}
+
+	public Long getCollection_payment_collection_customer_signature_form_field_spec_id() {
+		return collection_payment_collection_customer_signature_form_field_spec_id;
+	}
+
+	public void setCollection_payment_collection_customer_signature_form_field_spec_id(
+			Long collection_payment_collection_customer_signature_form_field_spec_id) {
+		this.collection_payment_collection_customer_signature_form_field_spec_id = collection_payment_collection_customer_signature_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_name_form_field_spec_id() {
+		return document_verification_sim_card_name_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_name_form_field_spec_id(
+			Long document_verification_sim_card_name_form_field_spec_id) {
+		this.document_verification_sim_card_name_form_field_spec_id = document_verification_sim_card_name_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_phone_number_form_field_spec_id() {
+		return document_verification_sim_card_phone_number_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_phone_number_form_field_spec_id(
+			Long document_verification_sim_card_phone_number_form_field_spec_id) {
+		this.document_verification_sim_card_phone_number_form_field_spec_id = document_verification_sim_card_phone_number_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_address_form_field_spec_id() {
+		return document_verification_sim_card_address_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_address_form_field_spec_id(
+			Long document_verification_sim_card_address_form_field_spec_id) {
+		this.document_verification_sim_card_address_form_field_spec_id = document_verification_sim_card_address_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_signature_form_field_spec_id() {
+		return document_verification_sim_card_signature_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_signature_form_field_spec_id(
+			Long document_verification_sim_card_signature_form_field_spec_id) {
+		this.document_verification_sim_card_signature_form_field_spec_id = document_verification_sim_card_signature_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_identity_proof_type_form_field_spec_id() {
+		return document_verification_sim_card_identity_proof_type_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_identity_proof_type_form_field_spec_id(
+			Long document_verification_sim_card_identity_proof_type_form_field_spec_id) {
+		this.document_verification_sim_card_identity_proof_type_form_field_spec_id = document_verification_sim_card_identity_proof_type_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_identity_proof_form_field_spec_id() {
+		return document_verification_sim_card_identity_proof_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_identity_proof_form_field_spec_id(
+			Long document_verification_sim_card_identity_proof_form_field_spec_id) {
+		this.document_verification_sim_card_identity_proof_form_field_spec_id = document_verification_sim_card_identity_proof_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_age_proof_type_form_field_spec_id() {
+		return document_verification_sim_card_age_proof_type_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_age_proof_type_form_field_spec_id(
+			Long document_verification_sim_card_age_proof_type_form_field_spec_id) {
+		this.document_verification_sim_card_age_proof_type_form_field_spec_id = document_verification_sim_card_age_proof_type_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_age_proof_form_field_spec_id() {
+		return document_verification_sim_card_age_proof_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_age_proof_form_field_spec_id(
+			Long document_verification_sim_card_age_proof_form_field_spec_id) {
+		this.document_verification_sim_card_age_proof_form_field_spec_id = document_verification_sim_card_age_proof_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_residence_proof_type_form_field_spec_id() {
+		return document_verification_sim_card_residence_proof_type_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_residence_proof_type_form_field_spec_id(
+			Long document_verification_sim_card_residence_proof_type_form_field_spec_id) {
+		this.document_verification_sim_card_residence_proof_type_form_field_spec_id = document_verification_sim_card_residence_proof_type_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_residence_proof_form_field_spec_id() {
+		return document_verification_sim_card_residence_proof_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_residence_proof_form_field_spec_id(
+			Long document_verification_sim_card_residence_proof_form_field_spec_id) {
+		this.document_verification_sim_card_residence_proof_form_field_spec_id = document_verification_sim_card_residence_proof_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_last_three_months_salary_available_form_field_spec_id() {
+		return document_verification_sim_card_last_three_months_salary_available_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_last_three_months_salary_available_form_field_spec_id(
+			Long document_verification_sim_card_last_three_months_salary_available_form_field_spec_id) {
+		this.document_verification_sim_card_last_three_months_salary_available_form_field_spec_id = document_verification_sim_card_last_three_months_salary_available_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_pan_card_photo_form_field_spec_id() {
+		return document_verification_sim_card_pan_card_photo_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_pan_card_photo_form_field_spec_id(
+			Long document_verification_sim_card_pan_card_photo_form_field_spec_id) {
+		this.document_verification_sim_card_pan_card_photo_form_field_spec_id = document_verification_sim_card_pan_card_photo_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_one_cancelled_cheque_leaf_form_field_spec_id() {
+		return document_verification_sim_card_one_cancelled_cheque_leaf_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_one_cancelled_cheque_leaf_form_field_spec_id(
+			Long document_verification_sim_card_one_cancelled_cheque_leaf_form_field_spec_id) {
+		this.document_verification_sim_card_one_cancelled_cheque_leaf_form_field_spec_id = document_verification_sim_card_one_cancelled_cheque_leaf_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_personal_observation_form_field_spec_id() {
+		return document_verification_sim_card_personal_observation_form_field_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_personal_observation_form_field_spec_id(
+			Long document_verification_sim_card_personal_observation_form_field_spec_id) {
+		this.document_verification_sim_card_personal_observation_form_field_spec_id = document_verification_sim_card_personal_observation_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_name_form_field_spec_id() {
+		return document_verification_credit_card_name_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_name_form_field_spec_id(
+			Long document_verification_credit_card_name_form_field_spec_id) {
+		this.document_verification_credit_card_name_form_field_spec_id = document_verification_credit_card_name_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_phone_number_form_field_spec_id() {
+		return document_verification_credit_card_phone_number_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_phone_number_form_field_spec_id(
+			Long document_verification_credit_card_phone_number_form_field_spec_id) {
+		this.document_verification_credit_card_phone_number_form_field_spec_id = document_verification_credit_card_phone_number_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_address_form_field_spec_id() {
+		return document_verification_credit_card_address_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_address_form_field_spec_id(
+			Long document_verification_credit_card_address_form_field_spec_id) {
+		this.document_verification_credit_card_address_form_field_spec_id = document_verification_credit_card_address_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_signature_form_field_spec_id() {
+		return document_verification_credit_card_signature_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_signature_form_field_spec_id(
+			Long document_verification_credit_card_signature_form_field_spec_id) {
+		this.document_verification_credit_card_signature_form_field_spec_id = document_verification_credit_card_signature_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_identity_proof_type_form_field_spec_id() {
+		return document_verification_credit_card_identity_proof_type_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_identity_proof_type_form_field_spec_id(
+			Long document_verification_credit_card_identity_proof_type_form_field_spec_id) {
+		this.document_verification_credit_card_identity_proof_type_form_field_spec_id = document_verification_credit_card_identity_proof_type_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_identity_proof_form_field_spec_id() {
+		return document_verification_credit_card_identity_proof_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_identity_proof_form_field_spec_id(
+			Long document_verification_credit_card_identity_proof_form_field_spec_id) {
+		this.document_verification_credit_card_identity_proof_form_field_spec_id = document_verification_credit_card_identity_proof_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_age_proof_type_form_field_spec_id() {
+		return document_verification_credit_card_age_proof_type_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_age_proof_type_form_field_spec_id(
+			Long document_verification_credit_card_age_proof_type_form_field_spec_id) {
+		this.document_verification_credit_card_age_proof_type_form_field_spec_id = document_verification_credit_card_age_proof_type_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_age_proof_form_field_spec_id() {
+		return document_verification_credit_card_age_proof_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_age_proof_form_field_spec_id(
+			Long document_verification_credit_card_age_proof_form_field_spec_id) {
+		this.document_verification_credit_card_age_proof_form_field_spec_id = document_verification_credit_card_age_proof_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_residence_proof_type_form_field_spec_id() {
+		return document_verification_credit_card_residence_proof_type_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_residence_proof_type_form_field_spec_id(
+			Long document_verification_credit_card_residence_proof_type_form_field_spec_id) {
+		this.document_verification_credit_card_residence_proof_type_form_field_spec_id = document_verification_credit_card_residence_proof_type_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_residence_proof_form_field_spec_id() {
+		return document_verification_credit_card_residence_proof_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_residence_proof_form_field_spec_id(
+			Long document_verification_credit_card_residence_proof_form_field_spec_id) {
+		this.document_verification_credit_card_residence_proof_form_field_spec_id = document_verification_credit_card_residence_proof_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_last_three_months_salary_available_form_field_spec_id() {
+		return document_verification_credit_card_last_three_months_salary_available_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_last_three_months_salary_available_form_field_spec_id(
+			Long document_verification_credit_card_last_three_months_salary_available_form_field_spec_id) {
+		this.document_verification_credit_card_last_three_months_salary_available_form_field_spec_id = document_verification_credit_card_last_three_months_salary_available_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_income_tax_statement_available_form_field_spec_id() {
+		return document_verification_credit_card_income_tax_statement_available_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_income_tax_statement_available_form_field_spec_id(
+			Long document_verification_credit_card_income_tax_statement_available_form_field_spec_id) {
+		this.document_verification_credit_card_income_tax_statement_available_form_field_spec_id = document_verification_credit_card_income_tax_statement_available_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_pan_card_photo_copy_form_field_spec_id() {
+		return document_verification_credit_card_pan_card_photo_copy_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_pan_card_photo_copy_form_field_spec_id(
+			Long document_verification_credit_card_pan_card_photo_copy_form_field_spec_id) {
+		this.document_verification_credit_card_pan_card_photo_copy_form_field_spec_id = document_verification_credit_card_pan_card_photo_copy_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_six_months_bank_statement_form_field_spec_id() {
+		return document_verification_credit_card_six_months_bank_statement_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_six_months_bank_statement_form_field_spec_id(
+			Long document_verification_credit_card_six_months_bank_statement_form_field_spec_id) {
+		this.document_verification_credit_card_six_months_bank_statement_form_field_spec_id = document_verification_credit_card_six_months_bank_statement_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_one_cancelled_cheque_leaf_form_field_spec_id() {
+		return document_verification_credit_card_one_cancelled_cheque_leaf_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_one_cancelled_cheque_leaf_form_field_spec_id(
+			Long document_verification_credit_card_one_cancelled_cheque_leaf_form_field_spec_id) {
+		this.document_verification_credit_card_one_cancelled_cheque_leaf_form_field_spec_id = document_verification_credit_card_one_cancelled_cheque_leaf_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_personal_observation_form_field_spec_id() {
+		return document_verification_credit_card_personal_observation_form_field_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_personal_observation_form_field_spec_id(
+			Long document_verification_credit_card_personal_observation_form_field_spec_id) {
+		this.document_verification_credit_card_personal_observation_form_field_spec_id = document_verification_credit_card_personal_observation_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_name_form_field_spec_id() {
+		return document_verification_personal_loan_name_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_name_form_field_spec_id(
+			Long document_verification_personal_loan_name_form_field_spec_id) {
+		this.document_verification_personal_loan_name_form_field_spec_id = document_verification_personal_loan_name_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_phone_number_form_field_spec_id() {
+		return document_verification_personal_loan_phone_number_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_phone_number_form_field_spec_id(
+			Long document_verification_personal_loan_phone_number_form_field_spec_id) {
+		this.document_verification_personal_loan_phone_number_form_field_spec_id = document_verification_personal_loan_phone_number_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_address_form_field_spec_id() {
+		return document_verification_personal_loan_address_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_address_form_field_spec_id(
+			Long document_verification_personal_loan_address_form_field_spec_id) {
+		this.document_verification_personal_loan_address_form_field_spec_id = document_verification_personal_loan_address_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_signature_form_field_spec_id() {
+		return document_verification_personal_loan_signature_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_signature_form_field_spec_id(
+			Long document_verification_personal_loan_signature_form_field_spec_id) {
+		this.document_verification_personal_loan_signature_form_field_spec_id = document_verification_personal_loan_signature_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_identity_proof_type_form_field_spec_id() {
+		return document_verification_personal_loan_identity_proof_type_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_identity_proof_type_form_field_spec_id(
+			Long document_verification_personal_loan_identity_proof_type_form_field_spec_id) {
+		this.document_verification_personal_loan_identity_proof_type_form_field_spec_id = document_verification_personal_loan_identity_proof_type_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_identity_proof_form_field_spec_id() {
+		return document_verification_personal_loan_identity_proof_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_identity_proof_form_field_spec_id(
+			Long document_verification_personal_loan_identity_proof_form_field_spec_id) {
+		this.document_verification_personal_loan_identity_proof_form_field_spec_id = document_verification_personal_loan_identity_proof_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_age_proof_type_form_field_spec_id() {
+		return document_verification_personal_loan_age_proof_type_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_age_proof_type_form_field_spec_id(
+			Long document_verification_personal_loan_age_proof_type_form_field_spec_id) {
+		this.document_verification_personal_loan_age_proof_type_form_field_spec_id = document_verification_personal_loan_age_proof_type_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_age_proof_form_field_spec_id() {
+		return document_verification_personal_loan_age_proof_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_age_proof_form_field_spec_id(
+			Long document_verification_personal_loan_age_proof_form_field_spec_id) {
+		this.document_verification_personal_loan_age_proof_form_field_spec_id = document_verification_personal_loan_age_proof_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_residence_proof_type_form_field_spec_id() {
+		return document_verification_personal_loan_residence_proof_type_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_residence_proof_type_form_field_spec_id(
+			Long document_verification_personal_loan_residence_proof_type_form_field_spec_id) {
+		this.document_verification_personal_loan_residence_proof_type_form_field_spec_id = document_verification_personal_loan_residence_proof_type_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_residence_proof_form_field_spec_id() {
+		return document_verification_personal_loan_residence_proof_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_residence_proof_form_field_spec_id(
+			Long document_verification_personal_loan_residence_proof_form_field_spec_id) {
+		this.document_verification_personal_loan_residence_proof_form_field_spec_id = document_verification_personal_loan_residence_proof_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_last_six_months_salary_available_form_field_spec_id() {
+		return document_verification_personal_loan_last_six_months_salary_available_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_last_six_months_salary_available_form_field_spec_id(
+			Long document_verification_personal_loan_last_six_months_salary_available_form_field_spec_id) {
+		this.document_verification_personal_loan_last_six_months_salary_available_form_field_spec_id = document_verification_personal_loan_last_six_months_salary_available_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_income_tax_statement_available_form_field_spec_id() {
+		return document_verification_personal_loan_income_tax_statement_available_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_income_tax_statement_available_form_field_spec_id(
+			Long document_verification_personal_loan_income_tax_statement_available_form_field_spec_id) {
+		this.document_verification_personal_loan_income_tax_statement_available_form_field_spec_id = document_verification_personal_loan_income_tax_statement_available_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_pan_card_photo_copy_form_field_spec_id() {
+		return document_verification_personal_loan_pan_card_photo_copy_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_pan_card_photo_copy_form_field_spec_id(
+			Long document_verification_personal_loan_pan_card_photo_copy_form_field_spec_id) {
+		this.document_verification_personal_loan_pan_card_photo_copy_form_field_spec_id = document_verification_personal_loan_pan_card_photo_copy_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_six_months_bank_statement_form_field_spec_id() {
+		return document_verification_personal_loan_six_months_bank_statement_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_six_months_bank_statement_form_field_spec_id(
+			Long document_verification_personal_loan_six_months_bank_statement_form_field_spec_id) {
+		this.document_verification_personal_loan_six_months_bank_statement_form_field_spec_id = document_verification_personal_loan_six_months_bank_statement_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_one_cancelled_cheque_leaf_form_field_spec_id() {
+		return document_verification_personal_loan_one_cancelled_cheque_leaf_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_one_cancelled_cheque_leaf_form_field_spec_id(
+			Long document_verification_personal_loan_one_cancelled_cheque_leaf_form_field_spec_id) {
+		this.document_verification_personal_loan_one_cancelled_cheque_leaf_form_field_spec_id = document_verification_personal_loan_one_cancelled_cheque_leaf_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_letter_of_employment_form_field_spec_id() {
+		return document_verification_personal_loan_letter_of_employment_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_letter_of_employment_form_field_spec_id(
+			Long document_verification_personal_loan_letter_of_employment_form_field_spec_id) {
+		this.document_verification_personal_loan_letter_of_employment_form_field_spec_id = document_verification_personal_loan_letter_of_employment_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_guarantor_one_name_form_field_spec_id() {
+		return document_verification_personal_loan_guarantor_one_name_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_guarantor_one_name_form_field_spec_id(
+			Long document_verification_personal_loan_guarantor_one_name_form_field_spec_id) {
+		this.document_verification_personal_loan_guarantor_one_name_form_field_spec_id = document_verification_personal_loan_guarantor_one_name_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_guarantor_one_phone_form_field_spec_id() {
+		return document_verification_personal_loan_guarantor_one_phone_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_guarantor_one_phone_form_field_spec_id(
+			Long document_verification_personal_loan_guarantor_one_phone_form_field_spec_id) {
+		this.document_verification_personal_loan_guarantor_one_phone_form_field_spec_id = document_verification_personal_loan_guarantor_one_phone_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_guarantor_one_address_form_field_spec_id() {
+		return document_verification_personal_loan_guarantor_one_address_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_guarantor_one_address_form_field_spec_id(
+			Long document_verification_personal_loan_guarantor_one_address_form_field_spec_id) {
+		this.document_verification_personal_loan_guarantor_one_address_form_field_spec_id = document_verification_personal_loan_guarantor_one_address_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_guarantor_two_name_form_field_spec_id() {
+		return document_verification_personal_loan_guarantor_two_name_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_guarantor_two_name_form_field_spec_id(
+			Long document_verification_personal_loan_guarantor_two_name_form_field_spec_id) {
+		this.document_verification_personal_loan_guarantor_two_name_form_field_spec_id = document_verification_personal_loan_guarantor_two_name_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_guarantor_two_phone_form_field_spec_id() {
+		return document_verification_personal_loan_guarantor_two_phone_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_guarantor_two_phone_form_field_spec_id(
+			Long document_verification_personal_loan_guarantor_two_phone_form_field_spec_id) {
+		this.document_verification_personal_loan_guarantor_two_phone_form_field_spec_id = document_verification_personal_loan_guarantor_two_phone_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_guarantor_two_address_form_field_spec_id() {
+		return document_verification_personal_loan_guarantor_two_address_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_guarantor_two_address_form_field_spec_id(
+			Long document_verification_personal_loan_guarantor_two_address_form_field_spec_id) {
+		this.document_verification_personal_loan_guarantor_two_address_form_field_spec_id = document_verification_personal_loan_guarantor_two_address_form_field_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_personal_observation_form_field_spec_id() {
+		return document_verification_personal_loan_personal_observation_form_field_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_personal_observation_form_field_spec_id(
+			Long document_verification_personal_loan_personal_observation_form_field_spec_id) {
+		this.document_verification_personal_loan_personal_observation_form_field_spec_id = document_verification_personal_loan_personal_observation_form_field_spec_id;
+	}
+
+	//form spec ids.......
+	
+	public Long getSales_new_leads_form_spec_id() {
+		return sales_new_leads_form_spec_id;
+	}
+
+	public void setSales_new_leads_form_spec_id(Long sales_new_leads_form_spec_id) {
+		this.sales_new_leads_form_spec_id = sales_new_leads_form_spec_id;
+	}
+
+	public Long getSales_orderform_form_spec_id() {
+		return sales_orderform_form_spec_id;
+	}
+
+	public void setSales_orderform_form_spec_id(Long sales_orderform_form_spec_id) {
+		this.sales_orderform_form_spec_id = sales_orderform_form_spec_id;
+	}
+
+	public Long getSales_payment_collection_form_spec_id() {
+		return sales_payment_collection_form_spec_id;
+	}
+
+	public void setSales_payment_collection_form_spec_id(
+			Long sales_payment_collection_form_spec_id) {
+		this.sales_payment_collection_form_spec_id = sales_payment_collection_form_spec_id;
+	}
+
+	/*public Long getSales_system_defined_fields_in_work_template_form_spec_id() {
+		return sales_system_defined_fields_in_work_template_form_spec_id;
+	}
+
+	public void setSales_system_defined_fields_in_work_template_form_spec_id(
+			Long sales_system_defined_fields_in_work_template_form_spec_id) {
+		this.sales_system_defined_fields_in_work_template_form_spec_id = sales_system_defined_fields_in_work_template_form_spec_id;
+	}*/
+
+	public Long getCollection_payment_collection_form_spec_id() {
+		return collection_payment_collection_form_spec_id;
+	}
+
+	public void setCollection_payment_collection_form_spec_id(
+			Long collection_payment_collection_form_spec_id) {
+		this.collection_payment_collection_form_spec_id = collection_payment_collection_form_spec_id;
+	}
+
+	public Long getDelivery_delivery_form_spec_id() {
+		return delivery_delivery_form_spec_id;
+	}
+
+	public void setDelivery_delivery_form_spec_id(
+			Long delivery_delivery_form_spec_id) {
+		this.delivery_delivery_form_spec_id = delivery_delivery_form_spec_id;
+	}
+
+	public Long getDocument_verification_credit_card_form_spec_id() {
+		return document_verification_credit_card_form_spec_id;
+	}
+
+	public void setDocument_verification_credit_card_form_spec_id(
+			Long document_verification_credit_card_form_spec_id) {
+		this.document_verification_credit_card_form_spec_id = document_verification_credit_card_form_spec_id;
+	}
+
+	public Long getDocument_verification_sim_card_form_spec_id() {
+		return document_verification_sim_card_form_spec_id;
+	}
+
+	public void setDocument_verification_sim_card_form_spec_id(
+			Long document_verification_sim_card_form_spec_id) {
+		this.document_verification_sim_card_form_spec_id = document_verification_sim_card_form_spec_id;
+	}
+
+	public Long getDocument_verification_personal_loan_form_spec_id() {
+		return document_verification_personal_loan_form_spec_id;
+	}
+
+	public void setDocument_verification_personal_loan_form_spec_id(
+			Long document_verification_personal_loan_form_spec_id) {
+		this.document_verification_personal_loan_form_spec_id = document_verification_personal_loan_form_spec_id;
+	}
+
+	public Long getSales_product_entity_spec_id() {
+		return sales_product_entity_spec_id;
+	}
+
+	public void setSales_product_entity_spec_id(Long sales_product_entity_spec_id) {
+		this.sales_product_entity_spec_id = sales_product_entity_spec_id;
+	}
+
+	public Long getSales_product_name_entity_field_spec_id() {
+		return sales_product_name_entity_field_spec_id;
+	}
+
+	public void setSales_product_name_entity_field_spec_id(
+			Long sales_product_name_entity_field_spec_id) {
+		this.sales_product_name_entity_field_spec_id = sales_product_name_entity_field_spec_id;
+	}
+
+	public Long getSales_product_description_entity_field_spec_id() {
+		return sales_product_description_entity_field_spec_id;
+	}
+
+	public void setSales_product_description_entity_field_spec_id(
+			Long sales_product_description_entity_field_spec_id) {
+		this.sales_product_description_entity_field_spec_id = sales_product_description_entity_field_spec_id;
+	}
+
+	public Long getSales_product_price_entity_field_spec_id() {
+		return sales_product_price_entity_field_spec_id;
+	}
+
+	public void setSales_product_price_entity_field_spec_id(
+			Long sales_product_price_entity_field_spec_id) {
+		this.sales_product_price_entity_field_spec_id = sales_product_price_entity_field_spec_id;
+	}
+
+	public Long getSales_payment_options_entity_spec_id() {
+		return sales_payment_options_entity_spec_id;
+	}
+
+	public void setSales_payment_options_entity_spec_id(
+			Long sales_payment_options_entity_spec_id) {
+		this.sales_payment_options_entity_spec_id = sales_payment_options_entity_spec_id;
+	}
+
+	public Long getSales_payment_options_entity_field_spec_id() {
+		return sales_payment_options_entity_field_spec_id;
+	}
+
+	public void setSales_payment_options_entity_field_spec_id(
+			Long sales_payment_options_entity_field_spec_id) {
+		this.sales_payment_options_entity_field_spec_id = sales_payment_options_entity_field_spec_id;
+	}
+
+	public Long getCollections_collection_payment_options_entity_spec_id() {
+		return collections_collection_payment_options_entity_spec_id;
+	}
+
+	public void setCollections_collection_payment_options_entity_spec_id(
+			Long collections_collection_payment_options_entity_spec_id) {
+		this.collections_collection_payment_options_entity_spec_id = collections_collection_payment_options_entity_spec_id;
+	}
+
+	public Long getCollections_payment_option_entity_field_spec_id() {
+		return collections_payment_option_entity_field_spec_id;
+	}
+
+	public void setCollections_payment_option_entity_field_spec_id(
+			Long collections_payment_option_entity_field_spec_id) {
+		this.collections_payment_option_entity_field_spec_id = collections_payment_option_entity_field_spec_id;
+	}
+
+	public Long getDelivery_items_entity_spec_id() {
+		return delivery_items_entity_spec_id;
+	}
+
+	public void setDelivery_items_entity_spec_id(Long delivery_items_entity_spec_id) {
+		this.delivery_items_entity_spec_id = delivery_items_entity_spec_id;
+	}
+
+	public Long getDelivery_items_item_entity_field_spec_id() {
+		return delivery_items_item_entity_field_spec_id;
+	}
+
+	public void setDelivery_items_item_entity_field_spec_id(
+			Long delivery_items_item_entity_field_spec_id) {
+		this.delivery_items_item_entity_field_spec_id = delivery_items_item_entity_field_spec_id;
+	}
+
+	public Long getDelivery_items_description_entity_field_spec_id() {
+		return delivery_items_description_entity_field_spec_id;
+	}
+
+	public void setDelivery_items_description_entity_field_spec_id(
+			Long delivery_items_description_entity_field_spec_id) {
+		this.delivery_items_description_entity_field_spec_id = delivery_items_description_entity_field_spec_id;
+	}
+
+	public Long getDelivery_items_price_entity_field_spec_id() {
+		return delivery_items_price_entity_field_spec_id;
+	}
+
+	public void setDelivery_items_price_entity_field_spec_id(
+			Long delivery_items_price_entity_field_spec_id) {
+		this.delivery_items_price_entity_field_spec_id = delivery_items_price_entity_field_spec_id;
+	}
+
+	public Long getDelivery_payment_options_entity_spec_id() {
+		return delivery_payment_options_entity_spec_id;
+	}
+
+	public void setDelivery_payment_options_entity_spec_id(
+			Long delivery_payment_options_entity_spec_id) {
+		this.delivery_payment_options_entity_spec_id = delivery_payment_options_entity_spec_id;
+	}
+
+	public Long getDelivery_payment_options_payment_option_entity_field_spec_id() {
+		return delivery_payment_options_payment_option_entity_field_spec_id;
+	}
+
+	public void setDelivery_payment_options_payment_option_entity_field_spec_id(
+			Long delivery_payment_options_payment_option_entity_field_spec_id) {
+		this.delivery_payment_options_payment_option_entity_field_spec_id = delivery_payment_options_payment_option_entity_field_spec_id;
+	}
+
+	public Long getDocument_verification_identity_proofs_entity_spec_id() {
+		return document_verification_identity_proofs_entity_spec_id;
+	}
+
+	public void setDocument_verification_identity_proofs_entity_spec_id(
+			Long document_verification_identity_proofs_entity_spec_id) {
+		this.document_verification_identity_proofs_entity_spec_id = document_verification_identity_proofs_entity_spec_id;
+	}
+
+	public Long getDocument_verification_identity_proofs_entity_field_spec_id() {
+		return document_verification_identity_proofs_entity_field_spec_id;
+	}
+
+	public void setDocument_verification_identity_proofs_entity_field_spec_id(
+			Long document_verification_identity_proofs_entity_field_spec_id) {
+		this.document_verification_identity_proofs_entity_field_spec_id = document_verification_identity_proofs_entity_field_spec_id;
+	}
+
+	public Long getDocument_verification_age_proofs_entity_spec_id() {
+		return document_verification_age_proofs_entity_spec_id;
+	}
+
+	public void setDocument_verification_age_proofs_entity_spec_id(
+			Long document_verification_age_proofs_entity_spec_id) {
+		this.document_verification_age_proofs_entity_spec_id = document_verification_age_proofs_entity_spec_id;
+	}
+
+	public Long getDocument_verification_age_proofs_entity_field_spec_id() {
+		return document_verification_age_proofs_entity_field_spec_id;
+	}
+
+	public void setDocument_verification_age_proofs_entity_field_spec_id(
+			Long document_verification_age_proofs_entity_field_spec_id) {
+		this.document_verification_age_proofs_entity_field_spec_id = document_verification_age_proofs_entity_field_spec_id;
+	}
+
+	public Long getDocument_verification_residence_proofs_entity_spec_id() {
+		return document_verification_residence_proofs_entity_spec_id;
+	}
+
+	public void setDocument_verification_residence_proofs_entity_spec_id(
+			Long document_verification_residence_proofs_entity_spec_id) {
+		this.document_verification_residence_proofs_entity_spec_id = document_verification_residence_proofs_entity_spec_id;
+	}
+
+	public Long getDocument_verification_residence_proofs_entity_field_spec_id() {
+		return document_verification_residence_proofs_entity_field_spec_id;
+	}
+
+	public void setDocument_verification_residence_proofs_entity_field_spec_id(
+			Long document_verification_residence_proofs_entity_field_spec_id) {
+		this.document_verification_residence_proofs_entity_field_spec_id = document_verification_residence_proofs_entity_field_spec_id;
+	}
+
+	public Long getGlobal_company_customer_outstanding_amount_form_field_spec_id() {
+		return global_company_customer_outstanding_amount_form_field_spec_id;
+	}
+
+	public void setGlobal_company_customer_outstanding_amount_form_field_spec_id(
+			Long global_company_customer_outstanding_amount_form_field_spec_id) {
+		this.global_company_customer_outstanding_amount_form_field_spec_id = global_company_customer_outstanding_amount_form_field_spec_id;
+	}
+
+	public Long getGlobal_company_customer_total_calls_form_field_spec_id() {
+		return global_company_customer_total_calls_form_field_spec_id;
+	}
+
+	public void setGlobal_company_customer_total_calls_form_field_spec_id(
+			Long global_company_customer_total_calls_form_field_spec_id) {
+		this.global_company_customer_total_calls_form_field_spec_id = global_company_customer_total_calls_form_field_spec_id;
+	}
+
+	public Long getGlobal_company_customer_last_service_date_form_field_spec_id() {
+		return global_company_customer_last_service_date_form_field_spec_id;
+	}
+
+	public void setGlobal_company_customer_last_service_date_form_field_spec_id(
+			Long global_company_customer_last_service_date_form_field_spec_id) {
+		this.global_company_customer_last_service_date_form_field_spec_id = global_company_customer_last_service_date_form_field_spec_id;
+	}
+
+	public Long getService_call_system_defined_fields_in_work_template_form_spec_id() {
+		return service_call_system_defined_fields_in_work_template_form_spec_id;
+	}
+
+	public void setService_call_system_defined_fields_in_work_template_form_spec_id(
+			Long service_call_system_defined_fields_in_work_template_form_spec_id) {
+		this.service_call_system_defined_fields_in_work_template_form_spec_id = service_call_system_defined_fields_in_work_template_form_spec_id;
+	}
+
+	public Long getService_call_work_template_customer_form_field_spec_id() {
+		return service_call_work_template_customer_form_field_spec_id;
+	}
+
+	public void setService_call_work_template_customer_form_field_spec_id(
+			Long service_call_work_template_customer_form_field_spec_id) {
+		this.service_call_work_template_customer_form_field_spec_id = service_call_work_template_customer_form_field_spec_id;
+	}
+	
+	
+
+	
+
+}
